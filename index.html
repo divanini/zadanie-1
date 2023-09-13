@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container {
+            width: min(100%, 1440px);
+            margin-inline: auto;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        h1, h2, h3, p {
+            text-align: center;
+        }
+
+        li {
+            font-size: 1.2rem;
+        }
+
+        ul ul {
+            list-style-type: square;
+        }
+
+        ol {
+            list-style-type: upper-roman;
+        }
+
+        ol ol {
+            list-style-type: decimal;
+        }
+
+        hr {
+            height: 20px;
+            width: 45%;
+            display: block;
+            margin-inline: auto;
+            margin-top: 2rem;
+        }
+    </style>
+    <div class="container">
+        <h1>Это заголовок первого уровня</h1>
+        <h2>Это заголовок второго уровня</h2>
+        <h3>Это заголовок третьего уровня</h3>
+        <p>Это параграф</p>
+        <p>Теорема Пифагора: 
+            a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+        </p>
+        <ol>
+            <li>Это первый пункт нумерованного списка
+                <ol>
+                    <li>Это первый пункт второго нумерованного списка</li>
+                    <li>Это второй пункт второго нумерованного списка</li>
+                    <li>Это третий пункт второго нумерованного списка</li>
+                </ol>
+            </li>
+            <li>Это второй пункт нумерованного списка
+                <ol>
+                    <li>Это первый пункт второго нумерованного списка</li>
+                    <li>Это второй пункт второго нумерованного списка</li>
+                    <li>Это третий пункт второго нумерованного списка</li>
+                </ol>
+            </li>
+        </ol>
+        <ul>
+            <li>Это первый пункт ненумерованного списка
+                <ul>
+                    <li>Это первый пункт второго ненумерованного списка</li>
+                    <li>Это второй пункт второго ненумерованного списка</li>
+                </ul>
+            </li>
+            <li>Это второй пункт ненумерованного списка
+                <ul>
+                    <li>Это первый пункт второго ненумерованного списка</li>
+                    <li>Это второй пункт второго ненумерованного списка</li>
+                </ul>
+            </li>
+            <li>Это третий пункт ненумерованного списка
+                <ul>
+                    <li>Это первый пункт второго ненумерованного списка</li>
+                    <li>Это второй пункт второго ненумерованного списка</li>
+                </ul>
+            </li>
+        </ul>
+        <hr> 
+    </div>
+</body>
+</html>
