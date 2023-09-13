@@ -43,6 +43,15 @@
             margin-inline: auto;
             margin-top: 2rem;
         }
+
+        ol ol {
+            list-style-type: decimal; /* Арабские цифры на втором уровне */
+            counter-reset: item 3; /* Начать счет с 3 */
+        }
+
+        ol ol li::before {
+            content: counter(item) ". ";
+        }
     </style>
     <div class="container">
         <h1>Это заголовок первого уровня</h1>
