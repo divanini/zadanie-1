@@ -83,6 +83,37 @@
             top: 34rem;
             left: 15rem;
         }
+
+        .btn-box {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .btn-box button {
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            padding: 20px 40px;
+            color: white;
+        }
+
+        .change-first-name {
+            background-color: blueviolet;
+        }
+
+        .change-last-name {
+            background-color: cadetblue;
+        }
+
+        .change-date {
+            background-color: rgb(44, 73, 147);
+        }
+
+        button:hover {
+            background-color:rgb(55, 52, 75);
+        }
     </style>
     <div class="container">
         <img src="images/1258036505_pic.jpg" alt="" class="passport">
@@ -100,12 +131,33 @@
         <img src="images/Screenshot 2023-09-13 091842.png" alt="">
     </div>
     <div class="btn-box">
-        <button>Изменить имя</button>
-        <button>Изменить фамилию</button>
-        <button>Изменить дату рождения</button>
+        <button class="change-first-name">Изменить имя</button>
+        <button class="change-last-name">Изменить фамилию</button>
+        <button class="change-date">Изменить дату рождения</button>
     </div>
 </body>
 <script>
+    const changeFirstName = document.getElementsByTagName('button')[0];
+    const changeLastName = document.getElementsByTagName('button')[1];
+    const changeDate = document.getElementsByClassName("change-date")[0];
+    const firstName = document.getElementsByClassName('first-name')[0];
+    const lastName = document.getElementsByClassName('last-name')[0];
+    const date = document.querySelector('.date');
 
+    function toggleTextContent(element, value1, value2) {
+        element.textContent = element.textContent === value1 ? value2 : value1;
+    }
+
+    changeFirstName.onclick = function () {
+        toggleTextContent(firstName, "Давид", "David");
+    }
+
+    changeLastName.onclick = function () {
+        toggleTextContent(lastName, "Чобанян", "Chobanyan");
+    }
+
+    changeDate.onclick = function () {
+        toggleTextContent(date, "21.12.2004", "December 21, 2004");
+    }
 </script>
 </html>
